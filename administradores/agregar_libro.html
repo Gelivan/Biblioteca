@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <!--<link rel="stylesheet" href="../css/styles.css">-->
+    <script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+        <div class="buttons-nav">
+                <div class="buttons-nav-links">
+                    <a href="libros.html"><button class="button-link">Libros</button></a>
+                    <a href="autores.html"><button class="button-link" >Autores</button></a>
+                    <a href="temas.html"><button class="button-link">Temas</button></a>
+                    <button class="button-link" id="btn_logout">Salir</button>
+                </div>
+            </div>
+    <div class="list-block">
+        <label>Titulo</label>
+        <input type="text" id="txt_titulo_libro">
+        <label>Autor</label>
+        <select id="slc_autor"></select>
+        <label>Tema</label>
+        <select id="slc_tema"></select>
+        <label>Existencia</label>
+        <input type="text" id="txt_existencia">
+        <label>Ubicacion</label>
+        <input type="text" id="txt_ubicacion">
+        <label>Fecha de Ingreso</label>
+        <input type="text" id="txt_fecha_libro" disabled>
+        <a href="libros.html"><button class="button-link">Regresar</button></a>
+        <button class="button-link" onclick="LibrosAgregar();">Aceptar</button>
+    </div>
+    
+    <script type="text/javascript" src="js/agregar_libro.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--<link rel="stylesheet" href="../css/styles.css">-->
+</head>
+<body>
+        <div class="buttons-nav-links">
+            <a href="libros.html"><button class="button-link">Libros</button></a>
+            <a href="autores.html"><button class="button-link" >Autores</button></a>
+            <a href="temas.html"><button class="button-link">Temas</button></a>
+        </div>
+        <div class="buttons-nav-user">
+            <button class="button-link">Salir</button>
+        </div>
+    </div>
+    <div class="list-block">
+        <label>Tema</label>
+        <input type="text" id="txt_nuevo_tema">
+        <label>Fecha de Ingreso</label>
+        <input type="text" id="txt_fecha_tema" disabled>
+        <a href="temas.html"><button class="button-link">Regresar</button></a>
+        <button class="button-link" onclick="TemasAgregar();">Aceptar</button>
+    </div>
+    <script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/agregar_tema.js"></script>
+</body>
+</html>

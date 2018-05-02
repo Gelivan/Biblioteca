@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--<link rel="stylesheet" href="../css/styles.css">-->
+</head>
+<body>
+    <div class="buttons-nav">
+        <div class="buttons-nav-links">
+            <button class="button-link" onclick="window.location.href = 'libros.htmls'">Libros</button>
+            <button class="button-link" onclick="window.location.href = 'autores.html'">Autores</button>
+            <button class="button-link" onclick="window.location.href = 'temas.html'">Temas</button>
+            <button class="button-link" onclick="SesionCerrar();">Salir</button>
+        </div>
+    </div>
+    <div class="list-block">
+        <label>Nombres</label>
+        <input type="text" id="txt_autor_nombre">
+        <label>Apellidos</label>
+        <input type="text" id="txt_autor_apellido">
+        <label>Nacionalidad</label>
+        <select id="slc_nacionalidad"></select>
+        <label>Fecha de Nacimiento</label>
+        <input type="text" id="txt_nac_autor">
+        <label>Fecha de Fallecimiento</label>
+        <input type="text" id="txt_fallecimiento_autor">
+        <label>Fecha de Ingreso</label>
+        <input type="text" id="txt_fecha_autor" disabled>
+        <a href="autores.html"><button class="button-link">Regresar</button></a>
+        <button class="button-link" onclick="AutoresAgregar();">Aceptar</button>
+    </div>
+    <script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/agregar_autor.js"></script>
+</body>
+</html>

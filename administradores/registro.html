@@ -1,0 +1,124 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <!--<link rel="stylesheet" href="../css/styles.css">-->
+    <script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="navbar-inner">
+            <h3>Nuevo Administrador</h3>
+            <a class="color-white" href="index.html">Ya tienes una cuenta? Inicia sesion aqui</a>
+            <div class="col-2">
+                <div>
+                    <label>Nombres</label>
+                    <input type="text" id="txt_nombre" onkeypress="return Validarform(event,0);" placeholder="Ingresa tus nombres">
+                </div>
+                <div>
+                    <label>Apellidos</label>
+                    <input type="text" id="txt_apellido" onkeypress="return Validarform(event,0);" placeholder="Ingresa tus apellidos">
+                </div>
+                <div>
+                    <label>Direccion</label>
+                    <input type="text" id="txt_direccion" placeholder="Ingresa tu direccion">
+                </div>
+                <div>
+                    <label>Telefono</label>
+                    <input type="text" id="txt_tel" onfocusout="Validartelefono(this);" onkeypress="return Validarform(event,1);" maxlength="8"
+                        placeholder="Ingresa tu telefono">
+                </div>
+                <div class="col-2">
+                    <div>
+                        <label>Correo</label>
+                        <input type="text" id="txt_correo" placeholder="Ingresa tu correo" onfocusout="Validarcorreo();">
+                        <p id="p_correo" style="display: none; font-size: 8pt; ">* El correo solamente puede tener letras, numeros, - y .</p>
+                    </div>
+
+                </div>
+                <div class="col-2">
+                    <div>
+                        <label>Contraseña</label>
+                        <input type="password" id="txt_contra" onfocusout="Validarcontra();" placeholder="Ingresa tu contraseña">
+                        <br>
+                        <label>Confirma</label>
+                        <input type="password" id="txt_concontra" onfocusout="Concontra();" placeholder="Ingresa tu contraseña">
+                        <p id="concontra" style="display: none; font-size: 8pt; ">* La contraseña no coincide</p>
+                    </div>
+                    <div>
+                        <label>Genero</label>
+                        <input type="radio" name="rad_genero" checked id="rad_fem">
+                        <label for="rad_fem">Femenino</label>
+                        <input type="radio" name="rad_genero" id="rad_mas">
+                        <label for="rad_mas">Masculino</label>
+                    </div>
+                    <div>
+                        <label>Fecha de nacimiento</label>
+                        <input type="date" id="txt_fecha" onfocusout="Validarfecha(this);">
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div>
+                        <label>CUI</label>
+                        <input type="text" onkeypress="return Validarform(event,1);" onfocusout="Validarcui();" id="txt_cui" placeholder="Ingresa tu CUI"
+                            maxlength="13">
+                        <p id="p_cui" style="display: none; font-size: 8pt; ">* El CUI es incorrecto.</p>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div>
+                        <label>Departamento</label>
+                        <select id="sl_dept"></select>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div>
+                        <label>Municipio</label>
+                        <select id="sl_muni"></select>
+                    </div>
+                </div>
+                <div>
+                    <input type="checkbox" disabled id="chk_tutores">
+                    <label for="chk_tutores">Tus padres, tutores y/o protutores tienen conocimiento del uso y autorizacion la navegacion y utilizacion
+                        de los servicios</label>
+                </div>
+                <div>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <a href="#" id="hterminos" class="color-white"> Terminos y condiciones</a>
+                </div>
+            </div>
+            <div class="col-2">
+                <div>
+                    <input type="checkbox" id="chk_terminos">
+                    <label for="chk_terminos">Acepto los terminos y condiciones</label>
+                </div>
+            </div>
+            <button class="round-blue margin-24" id="btn_registrar">Registrarse</button>
+        </div>
+    </div>
+    <div class="terminos">
+        <div class="terminos-inner">
+            <p>
+                El acceso a y/o uso de la página web requiere que todos los visitantes adhieran a los términos y condiciones, aceptándolos
+                plenamente y sin reserva alguna, así como en su caso, las condiciones particulares que en el futuro puedan
+                complementarlas, sustituirlas o modificarlas en algún sentido en relación con los servicios y contenidos
+                del portal. Es importante leer detenidamente los términos y condiciones así como las condiciones particulares,
+                que pudieran dictarse, antes de acceder y/o utilizar cualquier servicio del portal.
+                <br>
+                <strong>CONDISIONES</strong>
+                <br> Todos los gastos de conexión con la mencionada página son a cargo del Usuario, quien deberá contar, además,
+                con un equipo y programas de computación que cumplan con los requisitos mínimos de seguridad que establezca
+                la Municipalidad de Rosario en cada momento. El Usuario toma conocimiento que cuando su equipo o programas
+                de computación no reúnan tales requisitos mínimos, se podrá bloquear su acceso.
+            </p>
+        </div>
+    </div>
+    <button class="round-blue" id="btn_cterminos">Regresar</button>
+    <script type="text/javascript" src="js/registro.js"></script>
+</body>
+
+</html>
